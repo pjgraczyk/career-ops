@@ -100,6 +100,7 @@ const SCANNER_TITLES = {
   'scan-interamt.mjs': 'Interamt Scan',
   'scan-seek.mjs': 'SEEK NZ Scan',
   'scan-topdev.mjs': 'TopDev Scan',
+  'scan-pracuj.mjs': 'Pracuj.pl Scan',
 };
 // Top-level scan-*.mjs files that are not scanners and print no summary.
 const NOT_SCANNERS = new Set(['scan-local-lib.mjs']);

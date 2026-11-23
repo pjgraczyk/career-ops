@@ -425,7 +425,7 @@ career-ops obsługuje główne polskie portale IT. Dwa z nich — JustJoin.it i 
 | ------------------- | -------------------------------------------- | ---------- | --------------------------------------------------------------------- |
 | **JustJoin.it**     | [justjoin.it](https://justjoin.it)           | Publiczne  | Największy portal IT w Polsce. JSON API z pełnymi danymi ofert        |
 | **NoFluffJobs**     | [nofluffjobs.com](https://nofluffjobs.com)   | Publiczne  | Obowiązkowe widełki wynagrodzenia. Skierowany do seniorów             |
-| **pracuj.pl**       | [pracuj.pl](https://pracuj.pl)               | Brak       | Największy ogólny portal. Blokuje boty (403) — weryfikacja ręczna     |
+| **pracuj.pl**       | [pracuj.pl](https://pracuj.pl)               | Skaner przeglądarkowy | Największy ogólny portal. `scan-pracuj.mjs` przez lightpanda (Cloudflare blokuje zwykły HTTP) |
 | **BulldogJob**      | [bulldogjob.pl](https://bulldogjob.pl)       | Brak       | IT-focused, oferty z widełkami                                        |
 | **inhire.io**       | [inhire.io](https://inhire.io)               | Brak       | Headhunting IT, często oferty nieujawnione publicznie                 |
 | **theprotocol.io**  | [theprotocol.io](https://theprotocol.io)     | Brak       | Dawny Rocket Jobs. Transparentne wynagrodzenia                        |

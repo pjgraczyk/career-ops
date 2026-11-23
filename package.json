@@ -50,6 +50,7 @@
     "scan:dayforce": "node scan-dayforce.mjs",
     "scan:topdev": "node scan-topdev.mjs",
     "scan:seek": "node scan-seek.mjs",
+    "scan:pracuj": "node scan-pracuj.mjs",
     "company:funded": "node company-funded.mjs",
     "harvest:buildlist": "node harvest-buildlist.mjs",
     "validate:portals": "node validate-portals.mjs",

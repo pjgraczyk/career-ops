@@ -158,6 +158,33 @@
 #   - keyword: "data engineer"
 #     location: "Hanoi"
 
+# -- Pracuj.pl keyword searches (optional, Poland) --
+# Read by scan-pracuj.mjs (`npm run scan:pracuj`), a standalone browser scanner
+# for www.pracuj.pl (Grupa Pracuj sp. z o.o.), Poland's largest job board. The
+# site answers a plain HTTP fetch with 403 + a Cloudflare challenge, so the
+# scanner drives the lightpanda headless browser (a real browser engine passes
+# the edge without any interactive step) — same architectural pattern as
+# scan-topdev.mjs and scan-dayforce.mjs.
+#
+# `keyword` is the search text (the scanner slugs it the way the board's own
+# search links do, folding Polish diacritics). Results are nationwide; there
+# is no per-entry location in this first cut — title_filter,
+# location_filter and data/blacklist.md below still apply. `max_pages` is
+# optional (default 3, cap 25). Every request is spaced a jittered 6-12 s
+# apart — measured WAF behaviour (see check-liveness.mjs) — so a 3-page
+# search takes under half a minute.
+#
+# There is no date filter: "new to you" is decided by scan-history's seen
+# set, not by a posting's age, same as scan-topdev.mjs.
+#
+# Requires the lightpanda binary: put `lightpanda` on your PATH (or point
+# `PRACUJ_LIGHTPANDA` at it). Install: https://lightpanda.io
+#
+# pracuj_searches:
+#   - keyword: "data engineer"
+#   - keyword: "python"
+#     max_pages: 5
+
 # -- Dayforce (Ceridian) Recruiting boards (optional) --
 # Read by scan-dayforce.mjs (`npm run scan:dayforce`), a separate Playwright
 # scanner for Dayforce career sites (jobs.dayforcehcm.com). Dayforce's job
